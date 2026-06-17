@@ -1,10 +1,10 @@
 # discovery-kit
 
-Product Management skills for POC-s, hackathons and other small projects. A Claude Code plugin that stops you from building for a non-existent problem, or miss the problem with your build. 
+A product-discovery toolkit for product builders - anyone who owns what gets built and why, whether you ship with code, no-code, or a prototype. A Claude Code plugin that stops you building for a problem nobody has, or missing the problem with what you build.
 
 ## What it does
 
-discovery-kit forces you through structured product discovery before you start coding. It asks hard questions, challenges your assumptions, and won't let you skip to implementation until you've clarified what you're building and why.
+discovery-kit forces you through structured product discovery before you start building. It asks hard questions, challenges your assumptions, and won't let you skip ahead until you've clarified what you're building and why.
 
 ### Workflows
 
@@ -32,7 +32,7 @@ Once a Product Document exists, discovery-kit switches to feature mode. A new fe
 ### Out of scope
 
 1. **Metrics** - Which metrics matter; how to collect and analyze user behaviour data? 
-2. **Building it out** - discovery-kit owns discovery and planning. When your Product Document is ready, hand discovery-kit artefacts over to coding skills (eg Obra Superpowers) for planning and implementation. 
+2. **Building it out** - discovery-kit owns discovery and planning, not the build. When your Product Document is ready, take it to whatever build method you use - write the code yourself, use a no-code tool, make a prototype, or hand it to someone else as the spec. If you happen to be building with code in Claude Code, you can pass the artifacts to coding skills (Obra Superpowers is just one example of a code path) for planning and implementation. 
 
 ## Install
 
@@ -47,7 +47,7 @@ Restart Claude Code. The plugin activates automatically when you start a new pro
 
 ## How it works
 
-When you say "let's build X" in Claude Code, discovery-kit intercepts and guides you through product discovery. It asks opinionated multiple-choice questions with recommendations, so you learn product thinking by seeing how a PM evaluates options.
+When you signal you want to build something, discovery-kit guides you through product discovery. It asks opinionated multiple-choice questions with recommendations, so you sharpen the thinking behind what you're building - who it's for, what problem it solves, and why it's worth making.
 
 All artifacts are saved to a `product/` directory in your project.
 

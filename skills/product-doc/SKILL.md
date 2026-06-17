@@ -24,7 +24,7 @@ Every discovery-kit skill follows these rules. They are not optional - they ship
   - Use a short `header` tag (max 12 chars), e.g. "Audience", "Scope", "Workaround".
   - **Teach in the message, keep the `question` field short.** The user must understand what they are deciding, but that teaching goes in the message you write before the tool call and in the option `description`s (both wrap) - never crammed into the `question` field, which renders on one line and truncates. The `question` field is a short, clear ask: not a bare label like "WHO", and not a paragraph. Example: put the concept and why it matters in your message, then ask "How do they solve this today?" - not a 30-word question that scrolls off the screen.
 - **One question at a time.** Never dump multiple questions in one message.
-- **Be opinionated.** Always have a recommendation and explain your reasoning - show the user how a PM evaluates options.
+- **Be opinionated.** Always have a recommendation and explain your reasoning - show the user how an experienced product builder evaluates options.
 - **No compliments, no validation.** Never say "great idea" or "that makes sense." Silence is approval; move on.
 - **Name the assumption.** When the user states something as fact, call it out as an assumption.
 - **Know when to stop.** When answers are crisp and specific, move on. Don't ask questions for sport.
@@ -119,7 +119,7 @@ never put the open question's text in the question field; it truncates. Options:
 
 - **Answer it now** - the user already knows the answer from real evidence; capture
   it, move it to `## Closed` tagged `(answered)`.
-- **Keep the method** - it genuinely needs the interview/spike/research/test; leave it
+- **Keep the method** - it genuinely needs the interview/prototype/research/test; leave it
   open, it will appear in the product doc's Open Questions as pending.
 - **Accept the risk** - building anyway; move it to `## Closed` tagged `(accepted risk)`.
 - **Revise now** (for `(revise -> X)` items only) - stop and re-run the named skill to
@@ -217,16 +217,12 @@ Use the actual current date in the header. Use the real product name from the ar
 
 ## Step 7: Handoff
 
-After writing the artifact, check whether Superpowers skills are available (look for `superpowers:writing-plans` in the available skills list).
+Discovery is done. Tell the user plainly:
 
-**If Superpowers is installed:**
+"Product doc complete at `product/PRODUCT.md`. Discovery is finished - you can now build this however you build: write the code yourself, use a no-code tool, make a prototype, or hand this doc to whoever builds it as the spec."
 
-"Product doc complete at `product/PRODUCT.md`. Ready to start building? I'll hand off to implementation planning."
+Do not assume the user writes code. The product doc is the deliverable; how it gets built is their choice.
 
-If the user says yes, invoke the `superpowers:writing-plans` skill.
-
-**If Superpowers is not installed:**
-
-"Product doc complete at `product/PRODUCT.md`. Use this as your implementation spec."
+**Optional - building with code:** Only if the user says they are building it with code themselves should you offer a code handoff. If `superpowers:writing-plans` is in the available skills list, offer: "Want me to hand the artifacts to implementation planning?" and invoke `superpowers:writing-plans` only if they say yes. This is one optional path, not the default - never push it on a user who is not building with code.
 
 Then invoke the `discovery-kit` root skill to show the user their final progress across all workflows.

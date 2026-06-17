@@ -43,7 +43,7 @@ Every discovery-kit skill follows these rules. They are not optional - they ship
   - Use a short `header` tag (max 12 chars), e.g. "Audience", "Scope", "Workaround".
   - **Teach in the message, keep the `question` field short.** The user must understand what they are deciding, but that teaching goes in the message you write before the tool call and in the option `description`s (both wrap) - never crammed into the `question` field, which renders on one line and truncates. The `question` field is a short, clear ask: not a bare label like "WHO", and not a paragraph. Example: put the concept and why it matters in your message, then ask "How do they solve this today?" - not a 30-word question that scrolls off the screen.
 - **One question at a time.** Never dump multiple questions in one message.
-- **Be opinionated.** Always have a recommendation and explain your reasoning - show the user how a PM evaluates options.
+- **Be opinionated.** Always have a recommendation and explain your reasoning - show the user how an experienced product builder evaluates options.
 - **No compliments, no validation.** Never say "great idea" or "that makes sense." Silence is approval; move on.
 - **Name the assumption.** When the user states something as fact, call it out as an assumption.
 - **Know when to stop.** When answers are crisp and specific, move on. Don't ask questions for sport.
@@ -53,7 +53,7 @@ Every discovery-kit skill follows these rules. They are not optional - they ship
 
 "Describe a typical day for this person when the problem shows up. Not their job title - their actual behavior. When does the problem hit? What are they in the middle of doing?"
 
-Challenge vague answers. "They're busy" is not a behavioral pattern. "They have 30 minutes between standups and their first meeting to review PRs, and they won't open a tool that takes more than 5 minutes to learn" is a behavioral pattern.
+Challenge vague answers. "They're busy" is not a behavioral pattern. "They have 30 minutes between meetings to pull together a client update, and they won't open a tool that takes more than 5 minutes to learn" is a behavioral pattern.
 
 ### 3b: Constraints
 
@@ -62,7 +62,7 @@ Challenge vague answers. "They're busy" is not a behavioral pattern. "They have 
 Push for concrete constraints:
 - Time: not "limited time" but "has 20 minutes before the next context switch"
 - Budget: not "cost-conscious" but "no purchasing authority, needs free tier or manager approval"
-- Skill: not "non-technical" but "comfortable with spreadsheets, won't touch a terminal"
+- Skill: not "non-technical" but "lives in Figma and Notion, won't write a line of code"
 - Politics: not "organizational friction" but "needs security team sign-off for any new SaaS tool"
 
 ### 3c: Goal tied to user job
@@ -129,7 +129,7 @@ Replace `[date]` with today's date.
 
 ### Naming rules
 
-- Labels describe the role or behavior, not a name. "Sprint-locked IC who reviews between meetings" not "Alex the Developer."
+- Labels describe the role or behavior, not a name. "Solo founder who validates between sales calls" not "Alex the Founder."
 - No cute names, no alliteration, no fictional backstory.
 - No demographics unless they directly affect the behavioral pattern (e.g., "first job out of bootcamp" matters if skill level is the constraint; "34 years old" never matters).
 
@@ -163,7 +163,7 @@ unresolved unknown in the shared register `product/open-questions.md`.
 
    TYPE -> METHOD is one of:
    - `testable -> interview` - a behavioral claim a user interview can settle
-   - `technical -> spike` - a feasibility/engineering unknown
+   - `feasibility -> test/prototype` - a feasibility unknown to test or prototype
    - `market -> research` - a market or competitor unknown
    - `pricing -> test` - willingness to pay
    - `revise -> <artifact>` - new evidence contradicts an upstream artifact (e.g.

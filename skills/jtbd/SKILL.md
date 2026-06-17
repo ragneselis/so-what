@@ -24,7 +24,7 @@ Every discovery-kit skill follows these rules. They are not optional - they ship
   - Use a short `header` tag (max 12 chars), e.g. "Audience", "Scope", "Workaround".
   - **Teach in the message, keep the `question` field short.** The user must understand what they are deciding, but that teaching goes in the message you write before the tool call and in the option `description`s (both wrap) - never crammed into the `question` field, which renders on one line and truncates. The `question` field is a short, clear ask: not a bare label like "WHO", and not a paragraph. Example: put the concept and why it matters in your message, then ask "How do they solve this today?" - not a 30-word question that scrolls off the screen.
 - **One question at a time.** Never dump multiple questions in one message.
-- **Be opinionated.** Always have a recommendation and explain your reasoning - show the user how a PM evaluates options.
+- **Be opinionated.** Always have a recommendation and explain your reasoning - show the user how an experienced product builder evaluates options.
 - **No compliments, no validation.** Never say "great idea" or "that makes sense." Silence is approval; move on.
 - **Name the assumption.** When the user states something as fact, call it out as an assumption.
 - **Know when to stop.** When answers are crisp and specific, move on. Don't ask questions for sport.
@@ -217,7 +217,7 @@ unresolved unknown in the shared register `product/open-questions.md`.
 
    TYPE -> METHOD is one of:
    - `testable -> interview` - a behavioral claim a user interview can settle
-   - `technical -> spike` - a feasibility/engineering unknown
+   - `feasibility -> test/prototype` - a feasibility unknown to test or prototype
    - `market -> research` - a market or competitor unknown
    - `pricing -> test` - willingness to pay
    - `revise -> <artifact>` - new evidence contradicts an upstream artifact (e.g.

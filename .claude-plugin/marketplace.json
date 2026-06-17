@@ -1,6 +1,6 @@
 {
   "name": "discovery-kit",
-  "description": "Hackathon product management plugin",
+  "description": "Product discovery for product builders",
   "owner": {
     "name": "Ragne Selis",
     "email": "ragne.selis@gmail.com"
@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "discovery-kit",
-      "description": "Hackathon product management - teaches developers product thinking through opinionated multiple-choice questioning before they write code",
+      "description": "Product discovery for product builders - teaches product thinking through opinionated multiple-choice questioning before you build",
       "version": "0.1.0",
       "source": "./",
       "author": {

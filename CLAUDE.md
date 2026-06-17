@@ -6,8 +6,8 @@ project/home tree, never from an installed plugin's directory - so nothing here
 changes how the plugin behaves for users. Every agent-facing rule must live in
 the skills (see below).
 
-discovery-kit teaches developers product management by forcing structured
-discovery before implementation: a hub skill plus six discovery skills that
+discovery-kit teaches product builders product management by forcing structured
+discovery before building: a hub skill plus six discovery skills that
 interrogate the user through opinionated multiple-choice questions and write
 artifacts into `product/`.
 
@@ -68,12 +68,14 @@ the `SKILL.md` files:
   them all. The disposition gate over the register lives in
   `skills/product-doc/SKILL.md`; the surfacing/routing of open questions lives in
   `skills/discovery-kit/SKILL.md`. The register also carries a `revise -> <artifact>` item type: when new evidence contradicts an upstream artifact, a skill logs a revise item naming it, the hub surfaces it first and routes back to that skill, and the gate forces a decision. This is discovery-kit's lightweight backward-propagation - no per-artifact status lines.
-- **Implementation guard** (block coding until `problem-statement.md` and
+- **Implementation guard** (block building until `problem-statement.md` and
   `PRODUCT.md` exist) - `skills/discovery-kit/SKILL.md`.
-- **Superpowers coexistence / handoff** - `skills/product-doc/SKILL.md` hands off
-  to `superpowers:writing-plans` when Superpowers is installed. discovery-kit skills
-  never invoke Superpowers skills otherwise, and never touch implementation,
-  debugging, code review, or testing.
+- **Build-agnostic handoff / Superpowers coexistence** - `skills/product-doc/SKILL.md`
+  treats the post-discovery handoff as build-agnostic by default (code, no-code,
+  prototype, or a brief for someone else); only when the user is building with code
+  does it optionally hand off to `superpowers:writing-plans`, if installed.
+  discovery-kit skills never invoke Superpowers skills otherwise, and never touch
+  implementation, debugging, code review, or testing.
 
 ## Conventions
 
