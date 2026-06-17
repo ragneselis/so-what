@@ -1,7 +1,7 @@
 {
   "name": "discovery-kit",
   "description": "Product discovery for product builders - teaches product thinking through opinionated multiple-choice questioning before you build",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": {
     "name": "Ragne Selis",
     "email": "ragne.selis@gmail.com"
