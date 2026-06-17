@@ -12,7 +12,7 @@ discovery-kit forces you through structured product discovery before you start b
 2. **Interview Script** - A JTBD-style interview script to validate the problem with real people *before* you build anything downstream. Walks the switch/timeline and the four forces, and includes a kill question.
 3. **Competitive Research** - What already exists? Why is your approach different?
 4. **Jobs to be Done** - What progress are your users trying to make? Draft jobs as hypotheses, then ground them in your interview results. Every job carries a status (hypothesis, supported, refined, contradicted, discovered) so a guess never masquerades as a validated need.
-5. **Personas** - Who specifically are you building for?
+5. **Personas** - Who specifically are you building for? Behavioural patterns grounded in evidence - real constraints, a job they're trying to get done, and how they solve it today. No demographics, no fictional backstory, no stock-photo personas.
 6. **Product Document** - Vision + outcome-driven requirements assembled from all the above, plus a concrete **Product Conception** (form factor and platform, look & feel, functionality scope, deployment) so the built thing is actually picturable - not just a list of outcomes.
 
 Minimum path: Problem Statement + Product Document.
