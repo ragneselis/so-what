@@ -31,7 +31,7 @@ Once a Product Document exists, discovery-kit switches to feature mode. A new fe
 
 ### Out of scope
 
-1. **Metrics** - Which metrics matter; how to collect and analyze user behaviour data? 
+1. **Analytics & instrumentation** - how to collect, pipe, and analyse user-behaviour data after launch. (discovery-kit DOES define a success signal for each key outcome in the Product Document - it just doesn't build your analytics stack.)
 2. **Building it out** - discovery-kit owns discovery and planning, not the build. When your Product Document is ready, take it to whatever build method you use - write the code yourself, use a no-code tool, make a prototype, or hand it to someone else as the spec. If you happen to be building with code in Claude Code, you can pass the artifacts to coding skills (Obra Superpowers is just one example of a code path) for planning and implementation. 
 
 ## Install

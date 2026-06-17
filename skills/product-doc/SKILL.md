@@ -91,6 +91,8 @@ Ask: "What are the 2-4 outcomes this product must deliver to be worth using?" Fr
 
 Use AskUserQuestion to propose outcomes based on the problem statement and JTBD (if available). Challenge outcomes that are vague or not tied to the problem.
 
+For each outcome, force one more question: **"How would you know this outcome happened - what would you actually observe?"** Capture the answer as a one-line **success signal** (e.g. "they finish expense entry in under two minutes", "they come back next week without a reminder"). This is the observable sign you'd watch for, not analytics - no dashboards, no data pipeline, just the thing that tells you the outcome is real. If the user can't name a signal, the outcome is still too vague - push on it the same way you push on everything else here.
+
 ### For each outcome, define what to build
 
 For each outcome, expand into concrete capabilities:
@@ -187,6 +189,7 @@ Write the output to `product/PRODUCT.md` using this format:
 ## Outcomes and Requirements
 
 ### [Outcome 1: description]
+**Success signal:** [what you'd observe if this outcome is real - one line, not analytics]
 #### [Capability title]
 **User does:** [concrete interaction]
 **System does:** [behavior]
@@ -195,6 +198,7 @@ Write the output to `product/PRODUCT.md` using this format:
 - [ ] [Criterion 2]
 
 ### [Outcome 2: description]
+**Success signal:** [what you'd observe if this outcome is real - one line, not analytics]
 #### [Capability title]
 ...
 
